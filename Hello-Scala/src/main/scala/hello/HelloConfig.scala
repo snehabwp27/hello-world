@@ -11,7 +11,7 @@ import org.springframework.stereotype.Controller;
 /**
  * This config class will trigger Spring @annotation scanning and auto configure Spring context.
  *
- * @author prashant
+ * @author sneha
  * @since 1.0
  */
  
@@ -23,6 +23,6 @@ class HelloConfig {
 @RequestMapping(value=Array("/"), method=Array(RequestMethod.GET))
 //@RequestMapping(Array("/"))
 @ResponseBody
-def home(): String = "Hello Prashant Waykar!"
+def home(): String = "Hello Sneha!"
 
 }

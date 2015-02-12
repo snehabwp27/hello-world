@@ -19,8 +19,8 @@ import org.springframework.stereotype.Controller;
 @EnableAutoConfiguration
 @ComponentScan
 class HelloConfig {
-
-@RequestMapping(Array("/"))
+@RequestMapping(value=Array("/"), method=Array(RequestMethod.GET))
+//@RequestMapping(Array("/"))
 @ResponseBody
 def home(): String = "Hello Prashant Waykar!"
 
